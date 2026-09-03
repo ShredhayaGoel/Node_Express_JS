@@ -1,23 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            text-align: center;
-            margin-top: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
 
-    <h1>Hello <%= name %> 👋</h1>
+    <div class="card">
 
-    <p>Welcome to our Delivery App!</p>
+        <div class="emoji">👋</div>
+
+        <p class="small-text">WELCOME TO YOUR SPACE</p>
+
+        <h1>
+            Hello, <span>
+                <%= name %>
+            </span>! 🎉
+        </h1>
+
+        <p class="message">
+            It's great to have you here. ✨
+            <br>
+            Hope you have an amazing day!
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                🚀
+                <p>Explore</p>
+            </div>
+
+            <div class="feature">
+                💡
+                <p>Learn</p>
+            </div>
+
+            <div class="feature">
+                ❤️
+                <p>Enjoy</p>
+            </div>
+        </div>
+
+        <a href="/" class="btn">Let's Go →</a>
+
+    </div>
 
 </body>
 
