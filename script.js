@@ -23,6 +23,11 @@ app.get('/ejs', (req, res) => {
     res.render('index', { title: 'ejs', message: "Hello from EJS!", age: 552 })
 });
 
+
+app.get("/profile/:name", (req, res) => {
+    res.render('name', { name: req.params.name });
+})
+
 app.listen(3000, () => {
     console.log('Server is running on http://localhost:3000')
 })
